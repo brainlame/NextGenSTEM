@@ -12,11 +12,13 @@ export default function SlidesSection() {
           Read Our Full Program Deck
         </h2>
         <p className="text-[#7a8099] text-sm max-w-md mx-auto mt-4">
-          Explore our curriculum, methodology, and impact data in our complete
-          program overview.
+          Explore our programs, team, and approach in our full program
+          overview.
         </p>
         <a
-          href="#"
+          href="https://docs.google.com/presentation/d/1MQ9h2y6Y3mzGxGr1Syy-WrF-khW44vD2S92BOS49QN0/edit?slide=id.g35a4699e027_0_999#slide=id.g35a4699e027_0_999"
+          target="_blank"
+          rel="noopener noreferrer"
           className="relative overflow-hidden group inline-block mt-8 border border-[#c9a84c] text-[#c9a84c] text-xs tracking-widest uppercase px-6 py-3 transition-colors duration-200"
         >
           <span className="relative z-10">View Full Deck &rarr;</span>

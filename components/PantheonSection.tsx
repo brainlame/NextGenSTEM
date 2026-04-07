@@ -12,9 +12,9 @@ export default function PantheonSection() {
           In Partnership with Pantheon Prep
         </h2>
         <p className="text-[#7a8099] text-sm max-w-lg mx-auto mt-4 leading-relaxed">
-          We operate in partnership with Pantheon Prep, a nationally recognized
-          education infrastructure organization serving 23 countries and over
-          11,000 students.
+          NextGen STEM operates in partnership with Pantheon Prep, a nationally
+          recognized education infrastructure organization serving 23 countries
+          and over 11,000 students.
         </p>
         <a
           href="https://pantheonprep.com"

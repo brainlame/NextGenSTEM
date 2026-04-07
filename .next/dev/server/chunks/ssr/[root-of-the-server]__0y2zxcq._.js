@@ -39,9 +39,9 @@ function Navbar() {
             className: "flex items-center justify-between max-w-6xl mx-auto px-6 h-full",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    href: "#",
+                    href: "/",
                     className: "font-serif font-semibold text-[#eeeae0]",
-                    children: "Non-Profit"
+                    children: "NextGen STEM"
                 }, void 0, false, {
                     fileName: "[project]/components/Navbar.tsx",
                     lineNumber: 5,
@@ -51,7 +51,7 @@ function Navbar() {
                     className: "hidden md:flex items-center gap-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "#about",
+                            href: "/#about",
                             className: "text-xs tracking-widest uppercase text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
                             children: "About"
                         }, void 0, false, {
@@ -60,7 +60,7 @@ function Navbar() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "#programs",
+                            href: "/#programs",
                             className: "text-xs tracking-widest uppercase text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
                             children: "Programs"
                         }, void 0, false, {
@@ -69,12 +69,21 @@ function Navbar() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "#contact",
+                            href: "/team",
+                            className: "text-xs tracking-widest uppercase text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
+                            children: "Team"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Navbar.tsx",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "/#contact",
                             className: "text-xs tracking-widest uppercase text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "[project]/components/Navbar.tsx",
-                            lineNumber: 22,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, this)
                     ]
@@ -84,7 +93,7 @@ function Navbar() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    href: "#contact",
+                    href: "/#contact",
                     className: "relative overflow-hidden group border border-[#c9a84c] text-[#c9a84c] text-xs tracking-widest uppercase px-4 py-2 transition-colors duration-200",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -92,20 +101,20 @@ function Navbar() {
                             children: "Get Started"
                         }, void 0, false, {
                             fileName: "[project]/components/Navbar.tsx",
-                            lineNumber: 34,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent"
                         }, void 0, false, {
                             fileName: "[project]/components/Navbar.tsx",
-                            lineNumber: 35,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Navbar.tsx",
-                    lineNumber: 30,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this)
             ]
@@ -140,7 +149,7 @@ function Hero() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-xs tracking-[0.2em] uppercase text-[#c9a84c] mb-6",
-                children: "Trusted. Proven. Elite."
+                children: "TRUSTED. PROVEN. STUDENT-LED."
             }, void 0, false, {
                 fileName: "[project]/components/Hero.tsx",
                 lineNumber: 11,
@@ -148,7 +157,7 @@ function Hero() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 className: "font-serif text-5xl md:text-7xl font-bold text-[#eeeae0] leading-tight",
-                children: "Shaping the Next Generation"
+                children: "Empowering the Next Generation"
             }, void 0, false, {
                 fileName: "[project]/components/Hero.tsx",
                 lineNumber: 14,
@@ -156,7 +165,7 @@ function Hero() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 className: "font-serif text-5xl md:text-7xl font-bold text-[#eeeae0] leading-tight italic",
-                children: "of Leaders."
+                children: "of STEM Leaders."
             }, void 0, false, {
                 fileName: "[project]/components/Hero.tsx",
                 lineNumber: 17,
@@ -164,7 +173,7 @@ function Hero() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-base md:text-lg text-[#7a8099] max-w-xl mt-5 leading-relaxed",
-                children: "We partner with schools to deliver world-class extracurricular programs in debate, business, STEM, and more."
+                children: "We provide accessible, high-level mentorship and experience to help students excel in competitive fields like AMC, Science Olympiad, and USACO."
             }, void 0, false, {
                 fileName: "[project]/components/Hero.tsx",
                 lineNumber: 20,
@@ -179,20 +188,20 @@ function Hero() {
                         children: "Learn More"
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Hero.tsx",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 7
             }, this)
         ]
@@ -214,20 +223,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const stats = [
     {
-        value: "11,000+",
-        label: "Students Taught"
+        value: "3",
+        label: "Founding Members"
     },
     {
-        value: "23",
-        label: "Countries"
+        value: "AMC",
+        label: "Math Competition"
     },
     {
-        value: "50+",
-        label: "National Awards"
+        value: "USACO",
+        label: "CS Olympiad"
     },
     {
-        value: "98%",
-        label: "School Satisfaction"
+        value: "SciOly",
+        label: "Science Olympiad"
     }
 ];
 function About() {
@@ -249,7 +258,7 @@ function About() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "font-serif text-3xl md:text-4xl font-bold text-[#eeeae0] mt-3 leading-snug",
-                            children: "Built for Schools. Designed for Impact."
+                            children: "Student-Led. Competition-Proven. Built for Impact."
                         }, void 0, false, {
                             fileName: "[project]/components/About.tsx",
                             lineNumber: 16,
@@ -257,7 +266,7 @@ function About() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-[#7a8099] leading-relaxed mt-4 text-sm",
-                            children: "We believe every student deserves access to elite-level academic mentorship — regardless of their zip code. Our team of mentors from top universities works directly with schools to build sustainable, results-driven programs."
+                            children: "NextGen STEM is a student-led organization dedicated to helping middle and high school students excel in competitive STEM fields. Our team works with experienced competitors from AMC, Science Olympiad, and USACO who bring firsthand knowledge of what it takes to succeed at the highest level."
                         }, void 0, false, {
                             fileName: "[project]/components/About.tsx",
                             lineNumber: 19,
@@ -274,11 +283,11 @@ function About() {
                     children: stats.map((stat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "font-serif text-4xl font-bold text-[#eeeae0]",
+                                    className: `font-serif font-bold text-[#eeeae0] ${/^\d/.test(stat.value) ? "text-4xl" : "text-2xl"}`,
                                     children: stat.value
                                 }, void 0, false, {
                                     fileName: "[project]/components/About.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 31,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -286,18 +295,18 @@ function About() {
                                     children: stat.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/About.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 34,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, stat.label, true, {
                             fileName: "[project]/components/About.tsx",
-                            lineNumber: 29,
+                            lineNumber: 30,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/About.tsx",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
             ]
@@ -324,20 +333,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const programs = [
     {
-        label: "PROGRAM 01",
-        title: "Debate & Public Speaking"
+        label: "AMC PREP",
+        title: "AMC Preparation",
+        body: "Structured preparation for the AMC 8, AMC 10, and AMC 12. Our mentors have competed at the highest levels of math competition and provide targeted practice, strategy, and problem-solving techniques."
     },
     {
-        label: "PROGRAM 02",
-        title: "Business & Entrepreneurship"
+        label: "SCIENCE OLYMPIAD",
+        title: "Science Olympiad Support",
+        body: "Coaching and resources for Science Olympiad competitors. Led by team captains with national tournament experience, we help students develop the technical knowledge and teamwork needed to win."
     },
     {
-        label: "PROGRAM 03",
-        title: "STEM & Computing"
-    },
-    {
-        label: "PROGRAM 04",
-        title: "Leadership Development"
+        label: "USACO",
+        title: "USACO Training",
+        body: "Algorithmic training for USACO Bronze through Platinum. Our mentors bring hands-on competitive programming experience to help students tackle challenging problems and advance through the divisions."
     }
 ];
 function ProgramsSection() {
@@ -352,7 +360,7 @@ function ProgramsSection() {
                     children: "Our Programs"
                 }, void 0, false, {
                     fileName: "[project]/components/ProgramsSection.tsx",
-                    lineNumber: 15,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -360,21 +368,21 @@ function ProgramsSection() {
                     children: "Programs Built for Excellence"
                 }, void 0, false, {
                     fileName: "[project]/components/ProgramsSection.tsx",
-                    lineNumber: 18,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-[#7a8099] text-sm leading-relaxed mt-4 max-w-lg",
-                    children: "Our programs are developed in partnership with Pantheon Prep's national network of mentors. Specific offerings coming soon."
+                    children: "Our programs are led by experienced competitors who bring firsthand knowledge of what it takes to succeed at the highest level."
                 }, void 0, false, {
                     fileName: "[project]/components/ProgramsSection.tsx",
-                    lineNumber: 21,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 md:grid-cols-2 gap-6 mt-12",
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-6 mt-12",
                     children: programs.map((program)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "group bg-[#13161e] border border-[#1e2330] p-6 rounded-sm transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(201,168,76,0.07)]",
+                            className: "group bg-[#13161e] border border-[#1e2330] hover:border-[#c9a84c]/30 p-6 rounded-sm transition-all duration-300 hover:shadow-[0_0_50px_rgba(201,168,76,0.15)] flex flex-col",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center justify-between mb-4",
@@ -387,21 +395,21 @@ function ProgramsSection() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ProgramsSection.tsx",
-                                            lineNumber: 33,
+                                            lineNumber: 44,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-[#7a8099] group-hover:text-[#c9a84c] transition-colors duration-200",
+                                            className: "text-[#7a8099] group-hover:text-[#c9a84c] transition-colors duration-200 text-lg",
                                             children: "⬡"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ProgramsSection.tsx",
-                                            lineNumber: 36,
+                                            lineNumber: 47,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ProgramsSection.tsx",
-                                    lineNumber: 32,
+                                    lineNumber: 43,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -409,15 +417,15 @@ function ProgramsSection() {
                                     children: program.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProgramsSection.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 51,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[#7a8099] text-sm leading-relaxed mb-6",
-                                    children: "Program description placeholder. Details about this program will be added once confirmed."
+                                    className: "text-[#7a8099] text-sm leading-relaxed mb-6 flex-1",
+                                    children: program.body
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProgramsSection.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 54,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -425,45 +433,45 @@ function ProgramsSection() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "relative z-10",
-                                            children: "Learn More →"
+                                            children: "LEARN MORE →"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ProgramsSection.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 58,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ProgramsSection.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 59,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ProgramsSection.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 57,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, program.label, true, {
                             fileName: "[project]/components/ProgramsSection.tsx",
-                            lineNumber: 28,
+                            lineNumber: 39,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/ProgramsSection.tsx",
-                    lineNumber: 26,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/ProgramsSection.tsx",
-            lineNumber: 14,
+            lineNumber: 25,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/ProgramsSection.tsx",
-        lineNumber: 10,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
@@ -479,7 +487,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function InfoSection({ label, headline, body, reverse }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "border-t border-[#1e2330] py-28 md:py-36 px-6",
+        className: "border-t border-[#1e2330] py-20 md:py-28 px-6",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center",
             children: [
@@ -570,7 +578,7 @@ function PantheonSection() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-[#7a8099] text-sm max-w-lg mx-auto mt-4 leading-relaxed",
-                    children: "We operate in partnership with Pantheon Prep, a nationally recognized education infrastructure organization serving 23 countries and over 11,000 students."
+                    children: "NextGen STEM operates in partnership with Pantheon Prep, a nationally recognized education infrastructure organization serving 23 countries and over 11,000 students."
                 }, void 0, false, {
                     fileName: "[project]/components/PantheonSection.tsx",
                     lineNumber: 14,
@@ -650,14 +658,16 @@ function SlidesSection() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-[#7a8099] text-sm max-w-md mx-auto mt-4",
-                    children: "Explore our curriculum, methodology, and impact data in our complete program overview."
+                    children: "Explore our programs, team, and approach in our full program overview."
                 }, void 0, false, {
                     fileName: "[project]/components/SlidesSection.tsx",
                     lineNumber: 14,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    href: "#",
+                    href: "https://docs.google.com/presentation/d/1MQ9h2y6Y3mzGxGr1Syy-WrF-khW44vD2S92BOS49QN0/edit?slide=id.g35a4699e027_0_999#slide=id.g35a4699e027_0_999",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
                     className: "relative overflow-hidden group inline-block mt-8 border border-[#c9a84c] text-[#c9a84c] text-xs tracking-widest uppercase px-6 py-3 transition-colors duration-200",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -665,14 +675,14 @@ function SlidesSection() {
                             children: "View Full Deck →"
                         }, void 0, false, {
                             fileName: "[project]/components/SlidesSection.tsx",
-                            lineNumber: 22,
+                            lineNumber: 24,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent"
                         }, void 0, false, {
                             fileName: "[project]/components/SlidesSection.tsx",
-                            lineNumber: 23,
+                            lineNumber: 25,
                             columnNumber: 11
                         }, this)
                     ]
@@ -686,7 +696,7 @@ function SlidesSection() {
                     children: "Opens in Google Slides"
                 }, void 0, false, {
                     fileName: "[project]/components/SlidesSection.tsx",
-                    lineNumber: 25,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this)
             ]
@@ -728,22 +738,22 @@ function Contact() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "font-serif text-3xl md:text-4xl font-bold text-[#eeeae0] mt-3",
-                    children: "Let's Work Together"
+                    children: "Reach Our Team"
                 }, void 0, false, {
                     fileName: "[project]/components/Contact.tsx",
                     lineNumber: 11,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 md:grid-cols-2 gap-6 mt-10",
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-6 mt-10",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "#",
+                            href: "tel:2163752855",
                             className: "bg-[#13161e] border border-[#1e2330] px-6 py-8 rounded-sm hover:border-[#c9a84c] transition-shadow duration-300 hover:shadow-[0_0_30px_rgba(201,168,76,0.06)] block",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xs uppercase tracking-widest text-[#7a8099]",
-                                    children: "Instagram"
+                                    children: "CCO — Arav Mathur"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Contact.tsx",
                                     lineNumber: 20,
@@ -751,7 +761,7 @@ function Contact() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-[#eeeae0] font-serif text-xl mt-2",
-                                    children: "@orghandle"
+                                    children: "216-375-2855"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Contact.tsx",
                                     lineNumber: 23,
@@ -764,12 +774,12 @@ function Contact() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "mailto:hello@example.com",
+                            href: "tel:2163472458",
                             className: "bg-[#13161e] border border-[#1e2330] px-6 py-8 rounded-sm hover:border-[#c9a84c] transition-shadow duration-300 hover:shadow-[0_0_30px_rgba(201,168,76,0.06)] block",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xs uppercase tracking-widest text-[#7a8099]",
-                                    children: "Email"
+                                    children: "COO — Maanav Patel"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Contact.tsx",
                                     lineNumber: 32,
@@ -777,7 +787,7 @@ function Contact() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-[#eeeae0] font-serif text-xl mt-2",
-                                    children: "hello@example.com"
+                                    children: "216-347-2458"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Contact.tsx",
                                     lineNumber: 35,
@@ -787,6 +797,32 @@ function Contact() {
                         }, void 0, true, {
                             fileName: "[project]/components/Contact.tsx",
                             lineNumber: 28,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "tel:9179308075",
+                            className: "bg-[#13161e] border border-[#1e2330] px-6 py-8 rounded-sm hover:border-[#c9a84c] transition-shadow duration-300 hover:shadow-[0_0_30px_rgba(201,168,76,0.06)] block",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-xs uppercase tracking-widest text-[#7a8099]",
+                                    children: "CSRO — Ronit Arora"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Contact.tsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-[#eeeae0] font-serif text-xl mt-2",
+                                    children: "917-930-8075"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Contact.tsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Contact.tsx",
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this)
                     ]
@@ -830,7 +866,7 @@ function Footer() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "font-serif font-semibold text-[#eeeae0]",
-                                    children: "Non-Profit"
+                                    children: "NextGen STEM"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Footer.tsx",
                                     lineNumber: 7,
@@ -838,7 +874,7 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xs text-[#7a8099] mt-1",
-                                    children: "Shaping the next generation of leaders."
+                                    children: "Student-led STEM mentorship for the next generation."
                                 }, void 0, false, {
                                     fileName: "[project]/components/Footer.tsx",
                                     lineNumber: 10,
@@ -854,7 +890,7 @@ function Footer() {
                             className: "flex items-center gap-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "#hero",
+                                    href: "/#hero",
                                     className: "text-xs uppercase tracking-widest text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
                                     children: "Home"
                                 }, void 0, false, {
@@ -863,7 +899,7 @@ function Footer() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "#about",
+                                    href: "/#about",
                                     className: "text-xs uppercase tracking-widest text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
                                     children: "About"
                                 }, void 0, false, {
@@ -872,12 +908,30 @@ function Footer() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "#contact",
+                                    href: "/#programs",
+                                    className: "text-xs uppercase tracking-widest text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
+                                    children: "Programs"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Footer.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "/team",
+                                    className: "text-xs uppercase tracking-widest text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
+                                    children: "Team"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Footer.tsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "/#contact",
                                     className: "text-xs uppercase tracking-widest text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200",
                                     children: "Contact"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Footer.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -894,10 +948,10 @@ function Footer() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-xs text-[#7a8099] mt-6 border-t border-[#1e2330] pt-6",
-                    children: "© 2026 Non-Profit. All rights reserved."
+                    children: "© 2026 NextGen STEM. All rights reserved."
                 }, void 0, false, {
                     fileName: "[project]/components/Footer.tsx",
-                    lineNumber: 37,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this)
             ]
@@ -967,17 +1021,17 @@ function Home() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InfoSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         label: "OUR APPROACH",
-                        headline: "Built for Schools, Not Tutoring Centers",
-                        body: "Our programs are designed to plug into a school's existing infrastructure — no extra burden on teachers, no disruption to academics. We handle everything."
+                        headline: "Built by Competitors, For Competitors.",
+                        body: "Every mentor on our team has competed in the programs we teach. We don't just teach theory — we share the strategies, habits, and mindsets that helped us succeed at the national level."
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
                         lineNumber: 19,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InfoSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        label: "OUR IMPACT",
-                        headline: "Results That Speak for Themselves",
-                        body: "From national competitions to real-world outcomes, our students consistently outperform. We measure success not in hours logged, but in results achieved.",
+                        label: "OUR MISSION",
+                        headline: "Accessible Mentorship for Every Student.",
+                        body: "Our mission is to empower students to reach their greatest potential in STEM by providing accessible, high-level mentorship and experience to strive in competitive fields like AMC, Science Olympiad, and USACO.",
                         reverse: true
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",

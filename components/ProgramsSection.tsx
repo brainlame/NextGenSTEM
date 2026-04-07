@@ -1,9 +1,69 @@
+"use client";
+
+import { useState } from "react";
+
 const programs = [
-  { label: "PROGRAM 01", title: "Debate & Public Speaking" },
-  { label: "PROGRAM 02", title: "Business & Entrepreneurship" },
-  { label: "PROGRAM 03", title: "STEM & Computing" },
-  { label: "PROGRAM 04", title: "Leadership Development" },
+  {
+    label: "AMC PREP",
+    title: "AMC Preparation",
+    body: "Structured preparation for the AMC 8, AMC 10, and AMC 12. Our mentors have competed at the highest levels of math competition and provide targeted practice, strategy, and problem-solving techniques.",
+  },
+  {
+    label: "SCIENCE OLYMPIAD",
+    title: "Science Olympiad Support",
+    body: "Coaching and resources for Science Olympiad competitors. Led by team captains with national tournament experience, we help students develop the technical knowledge and teamwork needed to win.",
+  },
+  {
+    label: "USACO",
+    title: "USACO Training",
+    body: "Algorithmic training for USACO Bronze through Platinum. Our mentors bring hands-on competitive programming experience to help students tackle challenging problems and advance through the divisions.",
+  },
 ];
+
+function ProgramCard({
+  label,
+  title,
+  body,
+}: {
+  label: string;
+  title: string;
+  body: string;
+}) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="group bg-[#13161e] border border-[#1e2330] hover:border-[#c9a84c]/30 p-6 rounded-sm transition-all duration-300 hover:shadow-[0_0_50px_rgba(201,168,76,0.15)] flex flex-col">
+      <div className="flex items-center justify-between mb-4">
+        <span className="text-xs tracking-widest uppercase text-[#c9a84c]">
+          &mdash; {label}
+        </span>
+        <span className="text-[#7a8099] group-hover:text-[#c9a84c] transition-colors duration-200 text-lg">
+          ⬡
+        </span>
+      </div>
+      <h3 className="font-serif text-xl font-bold text-[#eeeae0] mb-4">
+        {title}
+      </h3>
+      <div
+        className="overflow-hidden transition-all duration-300 ease-in-out"
+        style={{ maxHeight: open ? "300px" : "0px", opacity: open ? 1 : 0 }}
+      >
+        <p className="text-[#7a8099] text-sm leading-relaxed mb-6">{body}</p>
+      </div>
+      <div className="mt-auto">
+        <button
+          onClick={() => setOpen(!open)}
+          className="relative overflow-hidden w-full border border-[#c9a84c] text-[#c9a84c] text-xs tracking-widest uppercase px-6 py-3 transition-colors duration-200 group/btn"
+        >
+          <span className="relative z-10">
+            {open ? "CLOSE \u2190" : "LEARN MORE \u2192"}
+          </span>
+          <span className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default function ProgramsSection() {
   return (
@@ -19,36 +79,18 @@ export default function ProgramsSection() {
           Programs Built for Excellence
         </h2>
         <p className="text-[#7a8099] text-sm leading-relaxed mt-4 max-w-lg">
-          Our programs are developed in partnership with Pantheon Prep&apos;s
-          national network of mentors. Specific offerings coming soon.
+          Our programs are led by experienced competitors who bring firsthand
+          knowledge of what it takes to succeed at the highest level.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 items-start">
           {programs.map((program) => (
-            <div
+            <ProgramCard
               key={program.label}
-              className="group bg-[#13161e] border border-[#1e2330] p-6 rounded-sm transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(201,168,76,0.07)]"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-xs tracking-widest uppercase text-[#c9a84c]">
-                  &mdash; {program.label}
-                </span>
-                <span className="text-[#7a8099] group-hover:text-[#c9a84c] transition-colors duration-200">
-                  ⬡
-                </span>
-              </div>
-              <h3 className="font-serif text-xl font-bold text-[#eeeae0] mb-3">
-                {program.title}
-              </h3>
-              <p className="text-[#7a8099] text-sm leading-relaxed mb-6">
-                Program description placeholder. Details about this program will
-                be added once confirmed.
-              </p>
-              <button className="relative overflow-hidden w-full border border-[#c9a84c] text-[#c9a84c] text-xs tracking-widest uppercase px-6 py-3 transition-colors duration-200 group/btn">
-                <span className="relative z-10">Learn More &rarr;</span>
-                <span className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-              </button>
-            </div>
+              label={program.label}
+              title={program.title}
+              body={program.body}
+            />
           ))}
         </div>
       </div>

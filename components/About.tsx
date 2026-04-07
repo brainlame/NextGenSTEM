@@ -1,8 +1,8 @@
 const stats = [
-  { value: "11,000+", label: "Students Taught" },
-  { value: "23", label: "Countries" },
-  { value: "50+", label: "National Awards" },
-  { value: "98%", label: "School Satisfaction" },
+  { value: "3", label: "Founding Members" },
+  { value: "AMC", label: "Math Competition" },
+  { value: "USACO", label: "CS Olympiad" },
+  { value: "SciOly", label: "Science Olympiad" },
 ];
 
 export default function About() {
@@ -14,20 +14,21 @@ export default function About() {
             Who We Are
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#eeeae0] mt-3 leading-snug">
-            Built for Schools. Designed for Impact.
+            Student-Led. Competition-Proven. Built for Impact.
           </h2>
           <p className="text-[#7a8099] leading-relaxed mt-4 text-sm">
-            We believe every student deserves access to elite-level academic
-            mentorship — regardless of their zip code. Our team of mentors from
-            top universities works directly with schools to build sustainable,
-            results-driven programs.
+            NextGen STEM is a student-led organization dedicated to helping
+            middle and high school students excel in competitive STEM fields.
+            Our team works with experienced competitors from AMC, Science
+            Olympiad, and USACO who bring firsthand knowledge of what it takes
+            to succeed at the highest level.
           </p>
         </div>
 
         <div className="grid grid-cols-2 gap-8">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="font-serif text-4xl font-bold text-[#eeeae0]">
+              <p className={`font-serif font-bold text-[#eeeae0] ${/^\d/.test(stat.value) ? "text-4xl" : "text-2xl"}`}>
                 {stat.value}
               </p>
               <p className="text-xs text-[#7a8099] uppercase tracking-widest mt-1">

@@ -9,17 +9,18 @@ export default function Hero() {
       }}
     >
       <p className="text-xs tracking-[0.2em] uppercase text-[#c9a84c] mb-6">
-        Trusted. Proven. Elite.
+        TRUSTED. PROVEN. STUDENT-LED.
       </p>
       <h1 className="font-serif text-5xl md:text-7xl font-bold text-[#eeeae0] leading-tight">
-        Shaping the Next Generation
+        Empowering the Next Generation
       </h1>
       <h1 className="font-serif text-5xl md:text-7xl font-bold text-[#eeeae0] leading-tight italic">
-        of Leaders.
+        of STEM Leaders.
       </h1>
       <p className="text-base md:text-lg text-[#7a8099] max-w-xl mt-5 leading-relaxed">
-        We partner with schools to deliver world-class extracurricular programs
-        in debate, business, STEM, and more.
+        We provide accessible, high-level mentorship and experience to help
+        students excel in competitive fields like AMC, Science Olympiad, and
+        USACO.
       </p>
       <a
         href="#about"

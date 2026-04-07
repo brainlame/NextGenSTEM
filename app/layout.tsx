@@ -13,9 +13,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Non-Profit",
+  title: "NextGen STEM",
   description:
-    "World-class extracurricular programs in debate, business, STEM, and more.",
+    "Empowering students to reach their greatest potential in STEM through accessible, high-level mentorship.",
 };
 
 export default function RootLayout({
