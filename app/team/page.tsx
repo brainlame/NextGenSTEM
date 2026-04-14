@@ -1,86 +1,64 @@
-"use client";
-
-import { useState } from "react";
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import TeamMemberCard from "./_components/TeamMemberCard";
+import { TEAM } from "@/data/team";
+import {
+  ORG_SAMEAS,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/config";
+import {
+  buildOrganizationWithMembers,
+  serializeJsonLd,
+} from "@/lib/jsonld";
 
-const team = [
-  {
-    name: "Maanav Patel",
-    role: "Chief Operations Officer",
-    image: "/maanav.png",
-    bio: "Maanav led his team to the national tournament in Science Olympiad as team captain. He founded a science paper at WRA, volunteers as a coach for Hudson Middle School Science Olympiad, and is working on a melanoma cancer research project. He is also founding ProjectMIND, a mental health and neuroscience awareness chapter at WRA.",
-  },
-  {
-    name: "Arav Mathur",
-    role: "Chief Communications Officer",
-    image: null as string | null,
-    bio: "Arav is developing a cancer research project focused on A375 cancer cells. He is president and founder of the WRA chess team and has provided over 20 hours of chess tutoring to Western Reserve students. He holds multiple varsity positions, demonstrating strong balance of athletics and academics.",
-  },
-  {
-    name: "Ronit Arora",
-    role: "Chief Strategy & Research Officer",
-    image: null as string | null,
-    bio: "Ronit has founded multiple clubs and tutored hundreds of hours through WRA\u2019s Peer Tutoring program. He has won multiple 1st place state Math Field Day titles in West Virginia and previously managed a reselling business where he gained early experience in entrepreneurship and market research.",
-  },
-];
+const TEAM_TITLE = "Meet the Team";
+const TEAM_DESCRIPTION =
+  "NextGen STEM was founded by students with firsthand competition experience in AMC, Science Olympiad, and USACO. Meet the coaches behind the mentorship.";
 
-function TeamCard({
-  name,
-  role,
-  bio,
-  image,
-}: {
-  name: string;
-  role: string;
-  bio: string;
-  image: string | null;
-}) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div className="group bg-[#13161e] border border-[#1e2330] hover:border-[#c9a84c]/30 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_50px_rgba(201,168,76,0.15)]">
-      <div className="w-full h-64 overflow-hidden">
-        {image ? (
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover object-top"
-          />
-        ) : (
-          <div className="w-full h-full bg-[#1a1e2a] flex items-center justify-center">
-            <span className="text-xs uppercase tracking-widest text-[#7a8099]">
-              Photo Coming Soon
-            </span>
-          </div>
-        )}
-      </div>
-      <div className="p-6 flex flex-col">
-        <h3 className="font-serif text-xl font-bold text-[#eeeae0]">
-          {name}
-        </h3>
-        <p className="text-xs uppercase tracking-widest text-[#c9a84c] mt-1 mb-6 h-8">
-          {role}
-        </p>
-        <div
-          className="overflow-hidden transition-all duration-300 ease-in-out"
-          style={{ maxHeight: open ? "500px" : "0px", opacity: open ? 1 : 0 }}
-        >
-          <p className="text-[#7a8099] text-sm leading-relaxed mb-6">{bio}</p>
-        </div>
-        <button
-          onClick={() => setOpen(!open)}
-          className="relative overflow-hidden w-full border border-[#c9a84c] text-[#c9a84c] text-xs tracking-widest uppercase px-6 py-3 transition-colors duration-200 group/btn"
-        >
-          <span className="relative z-10">
-            {open ? "CLOSE \u2190" : "MORE INFO \u2192"}
-          </span>
-          <span className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-500 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        </button>
-      </div>
-    </div>
-  );
+export function generateMetadata(): Metadata {
+  return {
+    title: TEAM_TITLE,
+    description: TEAM_DESCRIPTION,
+    alternates: { canonical: "/team" },
+    openGraph: {
+      type: "website",
+      siteName: SITE_NAME,
+      title: `${TEAM_TITLE} \u00b7 ${SITE_NAME}`,
+      description: TEAM_DESCRIPTION,
+      url: `${SITE_URL}/team`,
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: `${TEAM_TITLE} \u2014 ${SITE_NAME}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${TEAM_TITLE} \u00b7 ${SITE_NAME}`,
+      description: TEAM_DESCRIPTION,
+      images: ["/twitter-image"],
+    },
+  };
 }
+
+const teamJsonLd = buildOrganizationWithMembers({
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/opengraph-image`,
+  description: SITE_DESCRIPTION,
+  sameAs: ORG_SAMEAS,
+  members: TEAM.map((m) => ({
+    name: m.name,
+    jobTitle: m.role,
+    url: `${SITE_URL}/team/${m.slug}`,
+  })),
+});
 
 export default function TeamPage() {
   return (
@@ -101,19 +79,18 @@ export default function TeamPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            {team.map((member) => (
-              <TeamCard
-                key={member.name}
-                name={member.name}
-                role={member.role}
-                bio={member.bio}
-                image={member.image}
-              />
+            {TEAM.map((member) => (
+              <TeamMemberCard key={member.slug} member={member} />
             ))}
           </div>
         </section>
       </main>
       <Footer />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger -- typed JSON-LD payload, escaped by serializeJsonLd
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(teamJsonLd) }}
+      />
     </>
   );
 }

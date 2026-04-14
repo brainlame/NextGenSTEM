@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -8,6 +9,51 @@ import SlidesSection from "@/components/SlidesSection";
 import FAQSection from "@/components/FAQSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import {
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TAGLINE,
+  SITE_URL,
+} from "@/lib/config";
+import { buildWebSite, serializeJsonLd } from "@/lib/jsonld";
+
+const HOME_TITLE = `${SITE_NAME} \u2014 ${SITE_TAGLINE}`;
+
+export function generateMetadata(): Metadata {
+  return {
+    title: HOME_TITLE,
+    description: SITE_DESCRIPTION,
+    alternates: { canonical: "/" },
+    openGraph: {
+      type: "website",
+      siteName: SITE_NAME,
+      title: HOME_TITLE,
+      description: SITE_DESCRIPTION,
+      url: SITE_URL,
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: HOME_TITLE,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: HOME_TITLE,
+      description: SITE_DESCRIPTION,
+      images: ["/twitter-image"],
+    },
+  };
+}
+
+const websiteJsonLd = buildWebSite({
+  name: SITE_NAME,
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  searchUrlTemplate: `${SITE_URL}/?q={search_term_string}`,
+});
 
 export default function Home() {
   return (
@@ -36,6 +82,11 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger -- typed JSON-LD payload, escaped by serializeJsonLd
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(websiteJsonLd) }}
+      />
     </>
   );
 }
