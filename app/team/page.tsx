@@ -3,70 +3,43 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MonogramAvatar from "@/components/MonogramAvatar";
+import { officers, type Officer } from "@/data/officers";
 
-const team = [
-  {
-    name: "Maanav Patel",
-    role: "Chief Operations Officer",
-    image: "/maanav.png",
-    bio: "Maanav led his team to the national tournament in Science Olympiad as team captain. He founded a science paper at WRA, volunteers as a coach for Hudson Middle School Science Olympiad, and is working on a melanoma cancer research project. He is also founding ProjectMIND, a mental health and neuroscience awareness chapter at WRA.",
-  },
-  {
-    name: "Arav Mathur",
-    role: "Chief Communications Officer",
-    image: null as string | null,
-    bio: "Arav is developing a cancer research project focused on A375 cancer cells. He is president and founder of the WRA chess team and has provided over 20 hours of chess tutoring to Western Reserve students. He holds multiple varsity positions, demonstrating strong balance of athletics and academics.",
-  },
-  {
-    name: "Ronit Arora",
-    role: "Chief Strategy & Research Officer",
-    image: null as string | null,
-    bio: "Ronit has founded multiple clubs and tutored hundreds of hours through WRA\u2019s Peer Tutoring program. He has won multiple 1st place state Math Field Day titles in West Virginia and previously managed a reselling business where he gained early experience in entrepreneurship and market research.",
-  },
-];
-
-function TeamCard({
-  name,
-  role,
-  bio,
-  image,
-}: {
-  name: string;
-  role: string;
-  bio: string;
-  image: string | null;
-}) {
+function TeamCard({ member }: { member: Officer }) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="group bg-[#13161e] border border-[#1e2330] hover:border-[#c9a84c]/30 rounded-sm overflow-hidden transition-all duration-300 hover:shadow-[0_0_50px_rgba(201,168,76,0.15)]">
       <div className="w-full h-64 overflow-hidden">
-        {image ? (
+        {member.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={image}
-            alt={name}
+            src={member.image}
+            alt={member.name}
             className="w-full h-full object-cover object-top"
           />
         ) : (
-          <div className="w-full h-full bg-[#1a1e2a] flex items-center justify-center">
-            <span className="text-xs uppercase tracking-widest text-[#7a8099]">
-              Photo Coming Soon
-            </span>
-          </div>
+          <MonogramAvatar
+            initials={member.initials}
+            className="w-full h-full"
+          />
         )}
       </div>
       <div className="p-6 flex flex-col">
         <h3 className="font-serif text-xl font-bold text-[#eeeae0]">
-          {name}
+          {member.name}
         </h3>
         <p className="text-xs uppercase tracking-widest text-[#c9a84c] mt-1 mb-6 h-8">
-          {role}
+          {member.role}
         </p>
         <div
           className="overflow-hidden transition-all duration-300 ease-in-out"
           style={{ maxHeight: open ? "500px" : "0px", opacity: open ? 1 : 0 }}
         >
-          <p className="text-[#7a8099] text-sm leading-relaxed mb-6">{bio}</p>
+          <p className="text-[#7a8099] text-sm leading-relaxed mb-6">
+            {member.bio}
+          </p>
         </div>
         <button
           onClick={() => setOpen(!open)}
@@ -101,14 +74,8 @@ export default function TeamPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            {team.map((member) => (
-              <TeamCard
-                key={member.name}
-                name={member.name}
-                role={member.role}
-                bio={member.bio}
-                image={member.image}
-              />
+            {officers.map((member) => (
+              <TeamCard key={member.slug} member={member} />
             ))}
           </div>
         </section>
