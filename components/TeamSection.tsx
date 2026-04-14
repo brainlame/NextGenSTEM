@@ -1,23 +1,5 @@
-const team = [
-  {
-    name: "Maanav Patel",
-    role: "Chief Operations Officer",
-    image: "/maanav.png",
-    bio: "Maanav led his team to the national tournament in Science Olympiad as team captain. He founded a science paper at WRA, volunteers as a coach for Hudson Middle School Science Olympiad, and is working on a melanoma cancer research project. He is also founding ProjectMIND, a mental health and neuroscience awareness chapter at WRA.",
-  },
-  {
-    name: "Arav Mathur",
-    role: "Chief Communications Officer",
-    image: null,
-    bio: "Arav is developing a cancer research project focused on A375 cancer cells. He is president and founder of the WRA chess team and has provided over 20 hours of chess tutoring to Western Reserve students. He holds multiple varsity positions, demonstrating strong balance of athletics and academics.",
-  },
-  {
-    name: "Ronit Arora",
-    role: "Chief Strategy & Research Officer",
-    image: null,
-    bio: "Ronit has founded multiple clubs and tutored hundreds of hours through WRA\u2019s Peer Tutoring program. He has won multiple 1st place state Math Field Day titles in West Virginia and previously managed a reselling business where he gained early experience in entrepreneurship and market research.",
-  },
-];
+import { officers } from "@/data/officers";
+import MonogramAvatar from "@/components/MonogramAvatar";
 
 export default function TeamSection() {
   return (
@@ -39,23 +21,23 @@ export default function TeamSection() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {team.map((member) => (
+          {officers.map((member) => (
             <div
-              key={member.name}
+              key={member.slug}
               className="bg-[#13161e] border border-[#1e2330] p-6 rounded-sm"
             >
               {member.image ? (
+                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={member.image}
                   alt={member.name}
                   className="h-48 w-full object-cover rounded-sm mb-4"
                 />
               ) : (
-                <div className="bg-[#1a1e2a] border border-[#2a3040] h-48 w-full rounded-sm mb-4 flex items-center justify-center">
-                  <span className="text-xs text-[#7a8099] uppercase tracking-widest">
-                    Photo coming soon
-                  </span>
-                </div>
+                <MonogramAvatar
+                  initials={member.initials}
+                  className="h-48 w-full rounded-sm mb-4"
+                />
               )}
               <h3 className="font-serif text-xl text-[#eeeae0]">
                 {member.name}

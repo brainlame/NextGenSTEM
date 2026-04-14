@@ -20,16 +20,16 @@ export default function Navbar() {
             Programs
           </a>
           <a
-            href="/team"
-            className="text-xs tracking-widest uppercase text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200"
-          >
-            Team
-          </a>
-          <a
             href="/#contact"
             className="text-xs tracking-widest uppercase text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200"
           >
             Contact
+          </a>
+          <a
+            href="/team"
+            className="text-xs tracking-widest uppercase text-[#7a8099] hover:text-[#eeeae0] transition-colors duration-200"
+          >
+            Team
           </a>
         </div>
 

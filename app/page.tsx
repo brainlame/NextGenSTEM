@@ -6,6 +6,7 @@ import InfoSection from "@/components/InfoSection";
 import PantheonSection from "@/components/PantheonSection";
 import SlidesSection from "@/components/SlidesSection";
 import FAQSection from "@/components/FAQSection";
+import TeamTeaser from "@/components/TeamTeaser";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -33,6 +34,7 @@ export default function Home() {
         <PantheonSection />
         <SlidesSection />
         <FAQSection />
+        <TeamTeaser />
         <Contact />
         <Footer />
       </main>
